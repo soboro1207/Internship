@@ -1,0 +1,39 @@
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 80%;
+	font-style: italic;
+	font-weight: bold;
+}
+body{
+	font-size: 1.6rem;
+	font-style: italic;
+	font-family: "MS ゴシック",sans-serif,"MS 明朝",serif,Impact,Charcoal,"メイリオ",Meiryo,"游ゴシック",YuGothic,sans-serif;
+	background-color: #afd8d4;
+	margin: 0;
+	padding: 0;
+	background-image: url(../image/1280_800_20091130120640295095.jpg);
+	background-position: center center;/*画像を常に上下左右の中央に配置*/
+	background-repeat: no-repeat;/*画像をタイル状に繰り返し表示しない！便利！*/
+	background-attachment: fixed;/*コンテンツの高さが画像の高さより大きいとき動かないように固定する！*/
+	background-size: cover;/*表示するコンテナの大きさに基づいて背景画像を調整！すごく便利！*/
+}
+.hidden {
+	display: none;
+}
+body, h1, h2{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3{
+	font-weight: bolder;
+}
+button:hover{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px){
+	body {
+		background-image: url(../image/1280_800_20091130120640295095.jpg);
+	}
+}

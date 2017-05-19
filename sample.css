@@ -1,0 +1,36 @@
+#backblack{
+	background-color:black;
+	font-size: 40pt;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	}
+.UMR{
+	width: 50%;
+	height: 50%;
+}
+.center{
+	text-align:center;
+	vertical-align:middle;
+}
+.color-r{
+	color:#ff0000;
+}
+.color-g{
+	color:#00ff00;
+}
+.color-b{
+	color:#0000ff;
+}
+#centerbig{
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+#bigtext{
+	font-size: 85pt;
+	text-align: center;
+
+}

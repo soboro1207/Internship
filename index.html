@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<script src="js/main.js"></script>
+<script src="js/api.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/favorite.js"></script>
+<script src="js/bookmark.js"></script>
+
+<title>RssReader</title>
+
+</head>
+<body>
+<!--<div id="backgroundimg">
+	<img src="../../Users/kd120_000/Pictures/Kingsman2.jpg"> 
+</div>-->
+	<header id="header">
+		<nav>
+			<button class="menu-btn"><i class="fa fa-hand-o-right"></i></button>
+		</nav>
+
+		<h1>RSS Reader</h1>
+	</header>
+	<aside id="menu">
+		<header>
+			<nav>
+				<button class="menu-btn"><i class="fa fa-hand-o-left"></i></button>
+			</nav>
+		</header>
+	<section>
+		<h2>Menu</h2>
+		<article>
+			<h3>Favorite</h3>
+			<ul id="favorites-list">
+				<li>feed1<button>Download</button></li>
+			</ul>
+			<form id="add-favorite-form">
+				<input name="add-favorite-url" type="text" placeholder="URL">
+				<input name="add-favorite-btn" type="submit" value="Registration">
+			</form>
+		</article>
+
+		<article>
+			<h3>BookMark</h3>
+			<ul id="bookmarks-list"></ul>
+				<li><a href="" target="_blank">BookMark1</a></li>
+
+		</article>
+	</section>
+	</aside>
+
+	<section id="page">
+		<div id="loading"><i class="fa fa-cog fa-spin fa-5x"></i></div>
+		<header>
+			<h2>List</h2>
+		</header>
+	<div id="feed-articles"></div>
+	</section>
+
+	<footer id="footer">
+		<input id="feed-filter" type="text" placeholder="Searching...">
+	</footer>
+</body>
+</html>

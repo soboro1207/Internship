@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>STAFF ROLL</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/audiojs/audio.min.js"></script>
+<script src="js/windowclose.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sample.css">
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+ </script>
+ <script>
+	jQuery(function(){
+	var a=audiojs.createAll();
+	var audio=a[0];
+
+	jquery('.play').click(function(e){audio.play();});
+	jQuery('.pause').click(function(e){audio.pause();});
+
+	jQuery(document).keydown(function(e){
+		var unicode=e.charCode ? e.charCode : e.keyCode;
+		if (unicod==90) {
+			audio.play();
+		}else if(unicode==69){
+			audio.pause();
+		}
+	})
+	});
+</script>
+<!--
+<style type="text/css">
+		body{
+	background-color:black;
+	font-size: 40pt;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	}
+</style>
+<style>
+	.btn{
+		font-size: 80pt;
+	}
+</style>
+
+<script>
+	function scroll() {
+	scrollBy(0,3);
+	setTimeout("scroll()",10);
+	}
+</script>
+-->
+</head>
+<div id="backblack">
+<body onload="scroll()">
+<br>
+<audio src="../Users/kd120_000/Music/iTunes/iTunes Media/Music/Aimer/Unknown Album/RE：I AM.mp3" preload="none" loop></audio>
+<br><br><br>
+STAFF<br>
+<br><br><br>
+Plan<br>SONIC MOOV CO.,Ltd.<br><br><br>
+Composition<br>SONIC MOOV Co.,Ltd.<br><br><br>
+Program<br>sota kousei<br><br><br>
+Production environment<br>SublimeText<br>Github<br><br><br>
+Technical assistance<br>Dear Paul.<br><br>http://github/paulbarre/RssReader/wiki<br><br><br>
+Others...<br>HTMLreferences, CSSreferences, JQuery Japanese references.<br> <br>
+copyright©2017 by sota kousei <br>All Rights Reserved.
+<br><br><br>
+
+<div id="bigtext" >
+	Fin Thanks.
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+</body>
+</div>
+</html>
