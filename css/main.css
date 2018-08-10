@@ -12,7 +12,7 @@ body{
 	background-color: #afd8d4;
 	margin: 0;
 	padding: 0;
-	background-image: url(../image/1280_800_20091130120640295095.jpg);
+	background-image: url(../img/images.jpeg);
 	background-position: center center;/*画像を常に上下左右の中央に配置*/
 	background-repeat: no-repeat;/*画像をタイル状に繰り返し表示しない！便利！*/
 	background-attachment: fixed;/*コンテンツの高さが画像の高さより大きいとき動かないように固定する！*/
@@ -34,6 +34,6 @@ button:hover{
 
 @media only screen and (max-width: 767px){
 	body {
-		background-image: url(../image/1280_800_20091130120640295095.jpg);
+		background-image: url(../img/images(1).jpeg);
 	}
 }
