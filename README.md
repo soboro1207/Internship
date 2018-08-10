@@ -1,6 +1,7 @@
 # internship
-## Overview
 It is the original RSS reader created when I joined the intern.
+## Overview
+This is Simple RSS Reader, but little modification others.
 ## Used library
 
 - jQuery
