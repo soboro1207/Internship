@@ -37,3 +37,263 @@ button:hover{
 		background-image: url(../img/images(1).jpeg);
 	}
 }
+
+/* menu */
+#menu {
+	background-color: gray;
+	opacity: 1;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: .5s;
+	white-space: nowrap;
+	color:black;
+}
+#menu.opened{
+	width: 45%;
+}
+.menu-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: inherit;
+    border: 0;
+    color: inherit;
+}
+
+#menu header {
+    position: relative;
+    height: 6rem;
+    border-bottom: 1px double #12077f;
+}
+
+#menu header h2,
+#menu header nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0, -50%);
+}
+
+#menu header h2 {
+    left: 1rem;
+}
+
+#menu header nav {
+    right: 0.5rem;
+}
+
+#menu article {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #e8e9ff;
+}
+
+#add-favorite-form {
+    width: 100%;
+}
+
+/* header */
+
+#header{
+	background-color: white;
+	opacity: 1;
+	position: fixed;
+	width: 100%;
+	height: 6rem;
+	color: #103fa0;
+	text-align: center;
+	border-bottom: 10px double #103fa0;
+
+}
+#header h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
+	text-shadow: 3px 3px 2px #6d86ba;
+
+}
+
+#header nav{
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	-webkit-transform: translate(0%,-50%);
+	transform: translate(0%,-50%);
+}
+
+/* footet */
+#footer{
+	background-color: #09877c;
+	opacity: 1;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 4rem;
+	text-align: left;
+}
+
+#footer .feed-filter{
+	margin: 1rem;
+	width: 40%;
+	font-size: 15px;
+}
+
+#footer .copyrights{
+	position: fixed;
+	bottom: 1px;
+	right: 10rem;
+	text-align: center;
+	font-size: 10px;
+	opacity: 0.5;
+	text-decoration: none;
+	display: inline;
+}
+
+#footer .staffroll {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 12px;
+	padding: 1px 3px;
+	font-weight: bold;
+	background-color: #126044;
+	color: #93a5c1;
+	border-style: none;
+
+	box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+	text-shadow: 1px 1px 2px #000;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#footer .staffroll:hover{
+	background-color: #24d;
+	color: #fff;
+	opacity: 0.8;
+}
+
+/* page */
+#page{
+	padding-top: 6rem;
+	padding-bottom: 4rem;
+	overflow-x: hidden;/*縦スクロールを隠す*/
+  	overflow-y: scroll;/*横スクロール可にする*/
+}
+
+#page::-webkit-scrollbar{/*Webkit系のブラウザだけスクロールバー非表示*/
+	display: none;
+}
+
+#page h2{
+	border-bottom: double 10px #cdcdf7;/*二重下線*/
+	text-align: center;/*中央*/
+	margin: 2rem;
+}
+
+#feed-articles article{
+	border-left: 10px double #cdcdf7;
+	left: 2rem;
+	margin-right: 1rem;
+	padding-left: 2rem;
+}
+
+#feed-articles .article-title{
+	color: black;
+	font-weight: bolder;/*相対的に太く*/
+}
+
+#feed-articles .article-description{
+	margin: 0;
+	color: #d16100;
+	font-size: 1.5rem;
+}
+
+#feed-articles a{
+	text-decoration: underline;/*デコりません*/
+	color: blue;
+}
+
+#loading{
+	color: #5e71ff;
+	opacity: 5;		/*透明度*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);/*webkit系のときだけ*/
+	transform: translate(-50%,-50%);
+	display: none;
+
+}
+
+#loading.started {
+	display: initial;
+}
+
+/* picture */
+#side {
+	width: 640px;
+	height: 300pc;
+	margin: 0 auto;
+	position: relative;
+}
+
+#side img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#blockone {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/ダウンロード.jpeg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#blockone::-webkit-sclollbar{
+	display: none;
+}
+
+#blocktwo {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url("");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* backgroundimg */
+#backgroundimg{
+	z-index: 1;
+}
